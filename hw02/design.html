@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>HW 2 Design</title>
+  </head>
+  <body>
+    <h1>User-First Design</h1>
+	<h3>As a new user, I should be able to register for a new account.</h3>
+	<p>
+	  To register for a new account, a user first reaches the home page. 
+	  Then he clicks the "Sign Up" button, which brings him to another page where he
+	  enters his email address, username, and password (twice). Then he submits the form and receives an
+	  email confirmation. Clicking the confirmation link in the email activates the account.
+	</p>
+	<h3>As a normal user, I can post a message.</h3>
+	<p>
+	  To post a message, the user locates the message textbox on the top of the main page. 
+	  Then, she types her message and clicks the "Post My Status" button. Then, the message shows
+	  up below the textbox so she can see how it turned out.
+	</p>
+	<h3>As a normal user, I can follow someone.</h3>
+	<p>
+	  To follow someone else, a user searches for another user by username by typing the username in a
+	  search box on the top of the main page. After hitting the "Search" button, the requested account page is
+	  displayed. The user can then press the "Follow" button to follow this person. Now, if he goes back to the main
+	  page, he will start seeing this new person's messages in his feed.
+	</p>
+	<h3>As a normal user, I can read messages of those that I follow</h3>
+	<p>
+	  To read messages, simply scroll down through the main page. You will be able to see messages
+	  of people you have followed in the reverse order that they were written.
+	</p>
+	<h3>As a normal user, I can see other messages that use the same hashtag</h3>
+	<p>
+	  To see other messgess with a certain hashtag, a user first finds a message with a hashtag. Then, she can
+      click the hashtag in the message, which will appear as a link. This will then bring her to a new page which
+	  will display all the messages that contain that hashtag. From there, she can read them.
+	</p>
+
+    <h1>Data-First Design</h1>
+	<h3>User</h3>
+	<p>email address: must follow standard pattern (something@something.something), must be unique</p>
+	<p>username: must be unique</p>
+	<p>password</p>
+	<p>list of Messages that the user posted</p>
+	<p>list of Users that this person follows</p>
+
+	<h4>RESTful Routes</h4>
+	<p>Index: shows a list of all the users on the site.</p>
+	<p>Show: shows all the messages posted by a specific user.</p>
+	<p>New: a sign-up form to register a new user.</p>
+	<p>Create: a page that congratulates a new user for signing up and shows his username and email address.</p>
+	<p>Edit: a form for changing a user's email address or password.</p>
+	<p>Update: a page that informs a user that their information has been updated.</p>
+	<p>Destroy: a page that informs a user that they have deleted their account.</p>
+
+	<h3>Message</h3>
+	<p>content of the message</p>
+	<p>owner: the user that posted the message</p>
+
+	<h4>RESTful Routes</h4>
+	<p>Index: shows a list of all the messages on the site, or for a particular user.</p>
+	<p>Show: shows one particular message.</p>
+	<p>New: a textbox for writing a new message.</p>
+	<p>Create: a page that shows the new message and informs the user that it has been posted.</p>
+	<p>Edit: a page with a textbox to edit a previously posted message.</p>
+	<p>Update: a page that shows the revised message and informs the user that it has been fixed.</p>
+	<p>Destroy: a page that shows the user's other posts, but informs them that they have successfully deleted one.</p>
+  </body>
+</html>
+
